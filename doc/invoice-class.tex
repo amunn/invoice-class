@@ -48,7 +48,7 @@
 \maketitle
 \thispagestyle{empty}
 \section{Introduction}
-The \pkg{invoice-class} class allows printing of a standard US commercial invoice using invoice data from a CSV spreadsheet.
+The \pkg{invoice-class} class allows printing of a standard US commercial invoice using invoice data from a CSV spreadsheet. Invoices can span multiple pages.
 
 \section{Class document commands}
 The main class commands specify the parts of the form that need to be filled in.  Each command except |\weight| takes a single argument.
@@ -116,13 +116,16 @@ The uses the \pkg{datatool} package to produce the invoice using a CSV file. The
 \end{tabularx}
 \captionof{table}{Required CSV Column labels}\label{CSV}
 \end{center}
+\subsection{Sample CSV file}
+\lstinputlisting{ducks.csv}
+\clearpage
 \section{Sample Configuration file}
 \lstinputlisting{duck-invoice.cfg}
 
 \section{Sample document}
 \lstinputlisting{ducks.tex}
 \section{Bugs and support}
-This package is released as is, and although will accept bug reports, fixing them may not be a priority. You're free to fork the project to modify it as you wish.
+This package is released as is, and although I will accept bug reports, fixing them may not be a priority. You're free to fork the project to modify it as you wish.
 
 
 \includepdf[]{ducks.pdf}
