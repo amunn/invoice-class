@@ -1,2 +1,2 @@
-find . \( -name  '*.aux' -o -name '*.lot' -o -name '*.lof' -o -name '*.log' -o -name '*.bbl' -o -name '*.blg' -o -name '*.gz' -o -name '*.toc' \) -delete
+find . \( -name  '*.aux' -o -name '*.lot' -o -name '*.lof' -o -name '*.log' -o -name '*.bbl' -o -name '*.blg' -o -name '*.gz' -o -name '*.toc' -o -name '*.out' \) -delete
 ctanify --no-tds  -p invoice-class invoice-class.cls README.md doc/*=doc/latex/invoice-class

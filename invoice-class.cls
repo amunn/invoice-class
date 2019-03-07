@@ -60,25 +60,29 @@
 \insurancecost{0}
 \shippingdate{\today}
 \ConfigPrefix{}
+\fromaddress{}
+\shipper{}
+\location{}
 %
 % Configuration file scheme:
 % \ConfigPrefix{} sets a prefix for config files and allows multiple configuration files
 % invoice.cfg should contain the commands \fromaddress, \shipper and \location
 % these will generally be fixed values, but can be set on a per document basis too.
 %
-\AtBeginDocument{
+%\AtBeginDocument{
 \InputIfFileExists{\invc@configprefix invoice.cfg}{\ClassInfo{invoice-class}{Loading configuration file \invc@configprefix invoice.cfg }\typeout{Loading configuration file \invc@configprefix invoice.cfg}}
-{\ClassInfo{invoice-class}{Config file not loaded. Using class default}\typeout{Config file not loaded. Using class default}
-\fromaddress{%
-The Duck Company\\
-Some Avenue\\
-Somewhere MI 48823\\
-USA\\
-Tel. 555-555-5555\\
-}
-\shipper{Prof. van Duck}
-\location{Somewhere, MI}
-}}
+{\ClassInfo{invoice-class}{Config file not loaded.Using class default}\typeout{Config file not loaded. Using class default}}
+%\fromaddress{%
+%The Duck Company\\
+%Some Avenue\\
+%Somewhere MI 48823\\
+%USA\\
+%Tel. 555-555-5555\\
+%}
+%\shipper{Prof. van Duck}
+%\location{Somewhere, MI}
+%}
+%}
 %
 \pagestyle{fancy}
 \parindent=0pt

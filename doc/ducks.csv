@@ -1,1 +1,6 @@
-﻿Description, Country, Quantity, UnitValue, AmountYellow Ducks, USA,5,2.00,10.00Pink Ducks, USA,4,15.00,60.00Blue Ducks, USA,6,5.00,30.00Orange Ducks, USA,1,4.00,4.00Red Ducks, USA,30,2.00,60.00
+Description, Country, Quantity, UnitValue, Amount
+Yellow Ducks, USA,5,2.00,10.00
+Pink Ducks, USA,4,15.00,60.00
+Blue Ducks, USA,6,5.00,30.00
+Orange Ducks, USA,1,4.00,4.00
+Red Ducks, USA,30,2.00,60.00
