@@ -2,7 +2,7 @@
 
 US Commercial Invoice Class
 
-The `invoice-class` produces a standard US commercial invoice using data from a CSV file. Invoices can span multiple pages. The class is configurable for different shipping addresses.
+The `invoice-class` produces a standard US commercial shipping invoice using data from a CSV file. Invoices can span multiple pages. The class is configurable for different shipping addresses. It is not intended as a general purpose invoicing class for e.g. professional services.
 
 Copyright 2008-2019 by Alan Munn amunn@msu.edu
 
